@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:trips4you/widgets/locales.dart';
 
 class GastronomiaScreen extends StatelessWidget {
   const GastronomiaScreen({Key? key}) : super(key: key);
@@ -8,81 +9,74 @@ class GastronomiaScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        //poner opciones hacia abajo con listtitle
         children: [
-          ListTile(
-            trailing: Icon(Icons.keyboard_arrow_right), // a la derecha
-            title: Center(child: Text('Al Lujo Gluten Free')),
-
-            //TODO: pasarlo a widget
-            subtitle: Column(
-              children: [
-                Row(
-                  children: [
-                    FaIcon(FontAwesomeIcons.mapMarkerAlt),
-                    Container(
-                      margin: EdgeInsets.only(left: 10),
-                      child: Text('Miraflores 1660'),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: [
-                    FaIcon(FontAwesomeIcons.utensils),
-                    Container(
-                      margin: EdgeInsets.only(left: 10),
-                      child: Text('Bares y clubs'),
-                    ),
-                  ],
-                )
-              ],
-            ),
-            onTap: () {
-              print('Opción de configuración');
-            },
+          Locales(
+            titulo: 'Al Lujo Gluten Free',
+            ubicacion: 'Superí 260',
+            categoria: 'Bares y pubs',
           ),
           Divider(
             thickness: 2,
             color: Colors.grey,
           ),
-          ListTile(
-            trailing: Icon(Icons.keyboard_arrow_right), // a la derecha
-            title: Text('Archivos'),
-            subtitle: Text('Carpetas y archivos de proyectos'),
-            onTap: () {
-              print('Opción de archivos');
-            },
+          Locales(
+            titulo: 'Aquabar',
+            ubicacion: 'Cordiviola y Paseo Ribereño',
+            categoria: 'Restaurantes',
           ),
           Divider(
-            //linea separadora
             thickness: 2,
             color: Colors.grey,
           ),
-          ListTile(
-            trailing: Icon(Icons.keyboard_arrow_right), // a la derecha
-            title: Text('Pagos'),
-            subtitle: Text('Pagos relacionados a proyectos'),
-            onTap: () {
-              print('Opción de pagos');
-            },
+          Locales(
+            titulo: 'Aruba',
+            ubicacion: 'San Martín 511',
+            categoria: 'Heladerías',
           ),
           Divider(
-            //linea separadora
             thickness: 2,
             color: Colors.grey,
           ),
-          ListTile(
-            trailing: Icon(Icons.keyboard_arrow_right), // a la derecha
-            title: Text('Usuarios'),
-            subtitle: Text('Usuarios e interesados de proyectos'),
-            onTap: () {
-              print('Opción de usuarios');
-            },
+          Locales(
+            titulo: 'Bon Gusto',
+            ubicacion: 'San Martín 978',
+            categoria: 'Cafés y casas de té',
           ),
           Divider(
-            //linea separadora
             thickness: 2,
             color: Colors.grey,
+          ),
+          Locales(
+            titulo: 'Charlot',
+            ubicacion: 'Avenida Valparaíso',
+            categoria: 'Restaurantes',
+          ),
+          Divider(
+            thickness: 2,
+            color: Colors.grey,
+          ),
+          Locales(
+            titulo: 'Kushtall',
+            ubicacion: 'Av. Pellegrini 998',
+            categoria: 'Restaurantes',
+          ),
+          Divider(
+            thickness: 2,
+            color: Colors.grey,
+          ),
+          Locales(
+            titulo: 'Kushtall',
+            ubicacion: 'Av. Pellegrini 998',
+            categoria: 'Restaurantes',
+          ),
+          Divider(
+            thickness: 2,
+            color: Colors.grey,
+          ),
+          Locales(
+            titulo: 'Kushtall',
+            ubicacion: 'Av. Pellegrini 998',
+            categoria: 'Restaurantes',
           ),
         ],
       ),

@@ -17,6 +17,9 @@ class HomeScreen extends StatelessWidget {
                     image: AssetImage('assets/images/lugares/reloj.jpg'),
                   ),
                 ),
+                Container(
+                  child: Text('hola'),
+                ),
               ],
             ),
           ),
