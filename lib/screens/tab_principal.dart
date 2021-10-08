@@ -4,7 +4,6 @@ import 'package:trips4you/screens/tabs/atractivos.dart';
 import 'package:trips4you/screens/tabs/gastronomia.dart';
 import 'package:trips4you/screens/tabs/home.dart';
 import 'package:trips4you/screens/tabs/ofertas.dart';
-import 'package:trips4you/screens/tabs/resenas.dart';
 
 class TabPrincipal extends StatelessWidget {
   const TabPrincipal({Key? key}) : super(key: key);
@@ -13,7 +12,7 @@ class TabPrincipal extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: DefaultTabController(
-        length: 5,
+        length: 4,
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Color(0xFF6ECB63),
@@ -38,10 +37,6 @@ class TabPrincipal extends StatelessWidget {
                   child: Text('Ofertas'),
                   icon: Icon(MdiIcons.offer),
                 ),
-                Tab(
-                  child: Text('Reseñas'),
-                  icon: Icon(MdiIcons.message),
-                ),
               ],
             ),
           ),
@@ -51,7 +46,6 @@ class TabPrincipal extends StatelessWidget {
               AtractivosScreen(),
               GastronomiaScreen(),
               OfertasScreen(),
-              ResenasScreen(),
             ],
           ),
         ),

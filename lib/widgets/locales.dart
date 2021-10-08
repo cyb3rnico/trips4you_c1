@@ -17,7 +17,6 @@ class Locales extends StatelessWidget {
       trailing: Icon(Icons.keyboard_arrow_right), // a la derecha
       title: Center(child: Text(this.titulo)),
 
-      //TODO: pasarlo a widget
       subtitle: Column(
         children: [
           Row(
