@@ -39,7 +39,7 @@ class AtractivosScreen extends StatelessWidget {
           ),
           Atraccion(
             imagen: 'assets/images/lugares/casino.png',
-            titulo: 'Casino Municipal Viña del Mar',
+            titulo: 'Casino Municipal',
             descripcion:
                 'Su nombre comercial es Enjoy Viña del Mar, es un casino de juego ubicado en la ciudad chilena de Viña del Mar, en la Región de Valparaíso. Es propiedad de la municipalidad de esa ciudad. Sus orígenes se encuentran en el año 1914, cuando el intendente de Valparaíso Alberto Mackenna señaló que la creación de un casino en Viña del Mar potenciaría a la ciudad. En 1928 el proyecto tomó fuerza luego de la construcción de la ruleta en el balneario de Recreo, y en 1930 su impulso definitivo bajo la presidencia de Carlos Ibáñez del Campo, con la creación de diversas obras para el desarrollo de Viña del Mar, entre ellas la creación definitiva del casino de juegos. Fue inaugurado el 31 de diciembre de 1930.',
           ),

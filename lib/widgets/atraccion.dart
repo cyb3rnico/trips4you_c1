@@ -26,7 +26,7 @@ class Atraccion extends StatelessWidget {
                 Container(
                   child: Text(
                     this.titulo,
-                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                     textAlign: TextAlign.center,
                   ),
                 ),

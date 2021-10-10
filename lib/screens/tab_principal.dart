@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:trips4you/screens/tabs/atractivos.dart';
 import 'package:trips4you/screens/tabs/gastronomia.dart';
@@ -15,6 +16,7 @@ class TabPrincipal extends StatelessWidget {
         length: 4,
         child: Scaffold(
           appBar: AppBar(
+            leading: Icon(MdiIcons.walletTravel),
             backgroundColor: Color(0xFF6ECB63),
             title: Center(child: Text('Trips 4 You')),
             bottom: TabBar(
