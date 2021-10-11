@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:trips4you/estilos.dart';
 
 class Atraccion extends StatelessWidget {
-  final String imagen, titulo, descripcion;
+  final String imagen, titulo, descripcion, ruta;
 
-  Atraccion({this.imagen = "", this.titulo = "", this.descripcion = ""});
+  Atraccion(
+      {this.imagen = "",
+      this.titulo = "",
+      this.descripcion = "",
+      this.ruta = ""});
 
   @override
   Widget build(BuildContext context) {
@@ -37,6 +42,17 @@ class Atraccion extends StatelessWidget {
                       this.descripcion,
                       overflow: TextOverflow.fade,
                     ),
+                  ),
+                ),
+                Container(
+                  alignment: Alignment.bottomRight,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        minimumSize: Size(10, 5), primary: cButton),
+                    onPressed: () {
+                      Navigator.pushNamed(context, this.ruta);
+                    },
+                    child: Text('Ver Más'),
                   ),
                 ),
               ],

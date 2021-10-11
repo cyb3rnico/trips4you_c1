@@ -43,6 +43,7 @@ class HomeScreen extends StatelessWidget {
             child: Atraccion(
               imagen: 'assets/images/lugares/festival.jpg',
               titulo: 'Se suspende',
+              ruta: '/noticia',
               descripcion:
                   'Las autoridades chilenas decidieron este miércoles que el icónico Festival Internacional de la Canción de Viña del Mar, se suspenderá en 2022.',
             ),

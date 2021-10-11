@@ -65,8 +65,8 @@ class GastronomiaScreen extends StatelessWidget {
             color: Colors.grey,
           ),
           Locales(
-            titulo: 'Kushtall',
-            ubicacion: 'Av. Pellegrini 998',
+            titulo: 'Tori',
+            ubicacion: '7 Nte. 751, Viña del Mar',
             categoria: 'Restaurantes',
           ),
           Divider(
@@ -74,8 +74,8 @@ class GastronomiaScreen extends StatelessWidget {
             color: Colors.grey,
           ),
           Locales(
-            titulo: 'Kushtall',
-            ubicacion: 'Av. Pellegrini 998',
+            titulo: 'Nitan Gourmet',
+            ubicacion: '6 Nte. 880, Viña del Mar',
             categoria: 'Restaurantes',
           ),
         ],
