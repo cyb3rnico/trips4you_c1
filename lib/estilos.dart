@@ -8,4 +8,4 @@ const cBackground = Color(0xFFEADEB8);
 const fFamily = 'PT Sans';
 
 const sFont = TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
-const dFont = TextStyle(fontSize: 15);
+const dFont = TextStyle(fontSize: 15, color: cText);

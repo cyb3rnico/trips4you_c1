@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trips4you/estilos.dart';
 import 'package:trips4you/widgets/atraccion.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -28,7 +29,6 @@ class HomeScreen extends StatelessWidget {
                     'Bienvenido a Viña del Mar',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontWeight: FontWeight.bold,
                       fontSize: 30,
                       color: Colors.white,
                     ),
@@ -86,7 +86,6 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(bottom: 30),
                   child: Column(
                     children: [
                       Container(
@@ -96,10 +95,11 @@ class HomeScreen extends StatelessWidget {
                         child: Container(
                           alignment: Alignment.center,
                           height: 30,
-                          width: 100,
+                          width: 120,
                           child: Text(
                             'MULTIMEDIA',
-                            style: TextStyle(color: Color(0xFF0EADD8)),
+                            style: TextStyle(
+                                color: Color(0xFF0EADD8), fontSize: 20),
                           ),
                         ),
                       ),
@@ -121,6 +121,26 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              color: cButton,
+            ),
+            child: Column(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(top: 10),
+                  child: Text('App desarrollada por:',
+                      style: TextStyle(fontSize: 15, color: Colors.white)),
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: 10, bottom: 10),
+                  child: Text('Nicolás Astudillo - Sebastián Arenas',
+                      style: TextStyle(fontSize: 15, color: Colors.white)),
                 ),
               ],
             ),

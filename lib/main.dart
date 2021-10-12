@@ -6,6 +6,11 @@ import 'package:trips4you/screens/atracciones/muelle_vergara.dart';
 import 'package:trips4you/screens/atracciones/quinta_vergara.dart';
 import 'package:trips4you/screens/atracciones/reloj_flores.dart';
 import 'package:trips4you/screens/noticias/news_festival.dart';
+import 'package:trips4you/screens/ofertas/hotel_1.dart';
+import 'package:trips4you/screens/ofertas/hotel_2.dart';
+import 'package:trips4you/screens/ofertas/hotel_3.dart';
+import 'package:trips4you/screens/ofertas/hotel_4.dart';
+import 'package:trips4you/screens/ofertas/hotel_5.dart';
 import 'package:trips4you/screens/tab_principal.dart';
 import 'package:trips4you/screens/tabs/home.dart';
 
@@ -30,6 +35,11 @@ class MyApp extends StatelessWidget {
         '/muelle': (context) => MuelleVergara(),
         '/moai': (context) => MoaiMuseo(),
         '/noticia': (context) => NewsFestival(),
+        '/hotel1': (context) => Hotel1(),
+        '/hotel2': (context) => Hotel2(),
+        '/hotel3': (context) => Hotel3(),
+        '/hotel4': (context) => Hotel4(),
+        '/hotel5': (context) => Hotel5(),
       },
       initialRoute: '/',
       theme: ThemeData(

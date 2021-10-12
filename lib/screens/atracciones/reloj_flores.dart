@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+
+import '../../estilos.dart';
 
 class RelojFlores extends StatelessWidget {
   const RelojFlores({Key? key}) : super(key: key);
@@ -11,16 +14,24 @@ class RelojFlores extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Image(image: AssetImage('assets/images/lugares/quinta_vergara.png')),
+          Image(image: AssetImage('assets/images/lugares/reloj.jpg')),
           Container(
             margin: EdgeInsets.all(10),
             child: Text(
-                'Este parque que dentro alberga el anfiteatro al aire libre donde cada año se realiza el conocido festival de Viña del Mar, es de entrada gratuita y sin duda es un punto turístico que merece ser visitado. Además de hermosos jardines se encuentra también el Palacio Vergara.'),
+                'La postal obligada de la ciudad. Cuenta la leyenda que aquellos que se fotografíen con el reloj de flores volverán a la ciudad.',
+                style: dFont),
           ),
           Container(
             margin: EdgeInsets.all(10),
             child: Text(
-                'El palacio Vergara terminó de construirse el año 1910 y correspondió a la mansión de los Vergara Errázuriz, familia ilustre de Viña del Mar, descendientes de Francisco Vergara. En esta mansión se llevaron a cabo importantes reuniones políticas, musicales y sociales de la época.'),
+                'Inaugurado el 15 de mayo de 1962, lo que motivó su construcción fue el mundial de fútbol que ese año se celebró en nuestro país. Su maquinaria ha sido sustituida de ser mecánica a actualmente ser manejada por computador, lo que permite que se adapte mejor a los tiempos.',
+                style: dFont),
+          ),
+          Container(
+            margin: EdgeInsets.all(10),
+            child: Text(
+                'El reloj se encuentra al aire libre, por lo que pueden visitarlo a cualquier hora, sin embargo temprano en la mañana pueden disfrutarlo con menos gente, pues es un punto turístico  muy popular.',
+                style: dFont),
           ),
           Container(
             width: 150,
@@ -29,13 +40,13 @@ class RelojFlores extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Icon(Icons.lock_clock),
-                    Text('Horario: '),
+                    Icon(MdiIcons.mapMarker),
+                    Text('Ubicación', style: dFont),
                   ],
                 ),
-                Text('Lunes: Cerrado'),
                 Text(
-                  'Martes a Domingo: 09:00 - 14:00',
+                  'Alamos 590, Viña del Mar, Valparaíso',
+                  style: dFont,
                   textAlign: TextAlign.center,
                 ),
               ],

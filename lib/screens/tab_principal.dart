@@ -32,7 +32,7 @@ class TabPrincipal extends StatelessWidget {
                   icon: Icon(MdiIcons.camera),
                 ),
                 Tab(
-                  child: Text('Gastronomia'),
+                  child: Text('Gastronomía'),
                   icon: Icon(MdiIcons.food),
                 ),
                 Tab(

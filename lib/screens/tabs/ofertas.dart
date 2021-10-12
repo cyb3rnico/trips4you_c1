@@ -16,37 +16,38 @@ class _OfertasScreenState extends State<OfertasScreen> {
   final hoteles = [
     {
       'nombre': 'Enjoy Viña del Mar - Casino & Resort',
-      'descripcion': '1 habitación',
+      'descripcion': '1 habitación, 1 cama',
       'valoracion': '4 estrellas',
-      'precio': '\$134.224',
-      'imagen': 'h1.PNG'
+      'precio': '134.224',
+      'imagen': 'h1.PNG',
+      'ruta': '/quinta',
     },
     {
-      'nombre': 'Hotel Pullman Vina del Mar San Martín',
+      'nombre': 'Hotel Pullman Viña del Mar San Martín',
       'descripcion': '1 habitación, 2 camas',
       'valoracion': '4 estrellas',
-      'precio': '\$92.000',
+      'precio': '92.000',
       'imagen': 'h2.PNG'
     },
     {
       'nombre': 'Sheraton Miramar Hotel & Convention Center',
       'descripcion': '1 habitación, 1 cama',
       'valoracion': '5 estrellas',
-      'precio': '\$149.990',
+      'precio': '149.990',
       'imagen': 'h3.PNG'
     },
     {
       'nombre': 'Best Western Marina Del Rey',
-      'descripcion': '1 habitación',
+      'descripcion': '1 habitación, 2 camas',
       'valoracion': '4 estrellas',
-      'precio': '\$134.224',
+      'precio': '104.995',
       'imagen': 'h4.PNG'
     },
     {
       'nombre': 'MR. Mar Suites',
-      'descripcion': '1 habitación',
+      'descripcion': '1 habitación, 3 camas',
       'valoracion': '4 estrellas',
-      'precio': '\$134.224',
+      'precio': '119.900',
       'imagen': 'h5.PNG'
     },
   ];
@@ -60,6 +61,7 @@ class _OfertasScreenState extends State<OfertasScreen> {
           child: Text(
             'Revisa las mejores ofertas de Hoteles aquí',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+            textAlign: TextAlign.center,
           ),
         ),
         Container(
@@ -74,10 +76,10 @@ class _OfertasScreenState extends State<OfertasScreen> {
         ),
         Container(
           decoration: BoxDecoration(
-            border: Border.all(color: Colors.green),
+            border: Border.all(color: cPrimary),
             borderRadius: BorderRadius.circular(10),
           ),
-          margin: EdgeInsets.only(top: 10),
+          margin: EdgeInsets.all(20),
           child: IndexedStack(
             index: _stackIndex,
             children: hoteles.map<Widget>((h) {
@@ -89,25 +91,44 @@ class _OfertasScreenState extends State<OfertasScreen> {
                       child: Text(
                         h['nombre'].toString(),
                         style: sFont,
-                      ),
-                    ),
-                    Container(
-                      child: Text(
-                        h['descripcion'].toString(),
-                        style: dFont,
-                      ),
-                    ),
-                    Container(
-                      child: Text(
-                        h['valoracion'].toString(),
-                        style: dFont,
+                        textAlign: TextAlign.center,
                       ),
                     ),
                     Container(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          FaIcon(FontAwesomeIcons.moneyCheck),
+                          FaIcon(
+                            FontAwesomeIcons.bed,
+                            color: Colors.brown,
+                          ),
+                          Text(
+                            h['descripcion'].toString(),
+                            style: dFont,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          FaIcon(
+                            FontAwesomeIcons.star,
+                            color: Colors.orange,
+                          ),
+                          Text(
+                            h['valoracion'].toString(),
+                            style: dFont,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          FaIcon(FontAwesomeIcons.dollarSign),
                           Text(
                             h['precio'].toString(),
                             style: dFont,
@@ -137,12 +158,25 @@ class _OfertasScreenState extends State<OfertasScreen> {
                   }
                 },
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: cButton),
-                child: Text('Ver Detalles'),
-                onPressed: () {
-                  Navigator.pushNamed(context, '/quinta');
-                },
+              IndexedStack(
+                index: _stackIndex,
+                children: [
+                  verDetalles(
+                    ruta: '/hotel1',
+                  ),
+                  verDetalles(
+                    ruta: '/hotel2',
+                  ),
+                  verDetalles(
+                    ruta: '/hotel3',
+                  ),
+                  verDetalles(
+                    ruta: '/hotel4',
+                  ),
+                  verDetalles(
+                    ruta: '/hotel5',
+                  ),
+                ],
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(primary: cButton),
@@ -159,6 +193,25 @@ class _OfertasScreenState extends State<OfertasScreen> {
           ),
         ),
       ],
+    );
+  }
+}
+
+class verDetalles extends StatelessWidget {
+  const verDetalles({
+    this.ruta = "",
+    Key? key,
+  }) : super(key: key);
+
+  final String ruta;
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(primary: cButton),
+      child: Text('Ver Detalles'),
+      onPressed: () {
+        Navigator.pushNamed(context, this.ruta);
+      },
     );
   }
 }

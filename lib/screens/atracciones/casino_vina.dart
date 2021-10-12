@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trips4you/estilos.dart';
 
 class CasinoVina extends StatelessWidget {
   const CasinoVina({Key? key}) : super(key: key);
@@ -9,39 +10,49 @@ class CasinoVina extends StatelessWidget {
       appBar: AppBar(
         title: Text('Casino Municipal'),
       ),
-      body: Column(
-        children: [
-          Image(image: AssetImage('assets/images/lugares/quinta_vergara.png')),
-          Container(
-            margin: EdgeInsets.all(10),
-            child: Text(
-                'Este parque que dentro alberga el anfiteatro al aire libre donde cada año se realiza el conocido festival de Viña del Mar, es de entrada gratuita y sin duda es un punto turístico que merece ser visitado. Además de hermosos jardines se encuentra también el Palacio Vergara.'),
-          ),
-          Container(
-            margin: EdgeInsets.all(10),
-            child: Text(
-                'El palacio Vergara terminó de construirse el año 1910 y correspondió a la mansión de los Vergara Errázuriz, familia ilustre de Viña del Mar, descendientes de Francisco Vergara. En esta mansión se llevaron a cabo importantes reuniones políticas, musicales y sociales de la época.'),
-          ),
-          Container(
-            width: 150,
-            decoration: BoxDecoration(border: Border.all(color: Colors.brown)),
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    Icon(Icons.lock_clock),
-                    Text('Horario: '),
-                  ],
-                ),
-                Text('Lunes: Cerrado'),
-                Text(
-                  'Martes a Domingo: 09:00 - 14:00',
-                  textAlign: TextAlign.center,
-                ),
-              ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Image(image: AssetImage('assets/images/lugares/casino.png')),
+            Container(
+              margin: EdgeInsets.all(10),
+              child: Text(
+                  'El Casino Municipal de Viña del Mar, cuyo nombre comercial es Enjoy Viña del Mar, es un casino de juego ubicado en la ciudad chilena de Viña del Mar, en la Región de Valparaíso. Es propiedad de la municipalidad de esa ciudad.',
+                  style: dFont),
             ),
-          ),
-        ],
+            Container(
+              margin: EdgeInsets.all(10),
+              child: Text(
+                  'Sus orígenes se encuentran en el año 1914, cuando el intendente de Valparaíso Alberto Mackenna señaló que la creación de un casino en Viña del Mar potenciaría a la ciudad. En 1928 el proyecto tomó fuerza luego de la construcción de la ruleta en el balneario de Recreo, y en 1930 su impulso definitivo bajo la presidencia de Carlos Ibáñez del Campo, con la creación de diversas obras para el desarrollo de Viña del Mar, entre ellas la creación definitiva del casino de juegos. Fue inaugurado el 31 de diciembre de 1930. En 2000 fue declarado lugar de «interés histórico y arquitectónico» por el concejo municipal de la ciudad. En 2003 fue inaugurado el Hotel del Mar. Actualmente, la concesión del casino la tiene la empresa Enjoy.',
+                  style: dFont),
+            ),
+            Container(
+              margin: EdgeInsets.all(10),
+              child: Text('Ubicación: San Martín 199, Viña del Mar, Valparaíso',
+                  style: dFont),
+            ),
+            Container(
+              margin: EdgeInsets.only(bottom: 15),
+              width: 150,
+              decoration:
+                  BoxDecoration(border: Border.all(color: Colors.brown)),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Icon(Icons.lock_clock),
+                      Text('Horario: ', style: dFont),
+                    ],
+                  ),
+                  Text(
+                    'Lunes a Domingo: 12:00 - 07:00',
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

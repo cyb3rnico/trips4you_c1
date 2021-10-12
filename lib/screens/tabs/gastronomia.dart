@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:trips4you/estilos.dart';
 import 'package:trips4you/widgets/locales.dart';
 
 class GastronomiaScreen extends StatelessWidget {
@@ -17,16 +18,16 @@ class GastronomiaScreen extends StatelessWidget {
           ),
           Divider(
             thickness: 2,
-            color: Colors.grey,
+            color: cPrimary,
           ),
           Locales(
             titulo: 'Aquabar',
-            ubicacion: 'Cordiviola y Paseo Ribereño',
+            ubicacion: 'Cordiviola y Paseo Ribereño 120',
             categoria: 'Restaurantes',
           ),
           Divider(
             thickness: 2,
-            color: Colors.grey,
+            color: cPrimary,
           ),
           Locales(
             titulo: 'Aruba',
@@ -35,7 +36,7 @@ class GastronomiaScreen extends StatelessWidget {
           ),
           Divider(
             thickness: 2,
-            color: Colors.grey,
+            color: cPrimary,
           ),
           Locales(
             titulo: 'Bon Gusto',
@@ -44,16 +45,16 @@ class GastronomiaScreen extends StatelessWidget {
           ),
           Divider(
             thickness: 2,
-            color: Colors.grey,
+            color: cPrimary,
           ),
           Locales(
             titulo: 'Charlot',
-            ubicacion: 'Avenida Valparaíso',
+            ubicacion: 'Avenida Valparaíso 911',
             categoria: 'Restaurantes',
           ),
           Divider(
             thickness: 2,
-            color: Colors.grey,
+            color: cPrimary,
           ),
           Locales(
             titulo: 'Kushtall',
@@ -62,7 +63,7 @@ class GastronomiaScreen extends StatelessWidget {
           ),
           Divider(
             thickness: 2,
-            color: Colors.grey,
+            color: cPrimary,
           ),
           Locales(
             titulo: 'Tori',
@@ -71,7 +72,7 @@ class GastronomiaScreen extends StatelessWidget {
           ),
           Divider(
             thickness: 2,
-            color: Colors.grey,
+            color: cPrimary,
           ),
           Locales(
             titulo: 'Nitan Gourmet',

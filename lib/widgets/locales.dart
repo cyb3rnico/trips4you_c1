@@ -26,19 +26,19 @@ class Locales extends StatelessWidget {
         children: [
           Row(
             children: [
-              FaIcon(FontAwesomeIcons.mapMarkerAlt),
+              FaIcon(FontAwesomeIcons.mapMarkerAlt, color: Colors.red),
               Container(
                 margin: EdgeInsets.only(left: 10),
-                child: Text(this.ubicacion),
+                child: Text(this.ubicacion, style: dFont),
               ),
             ],
           ),
           Row(
             children: [
-              FaIcon(FontAwesomeIcons.utensils),
+              FaIcon(FontAwesomeIcons.utensils, color: Colors.grey),
               Container(
                 margin: EdgeInsets.only(left: 10),
-                child: Text(this.categoria),
+                child: Text(this.categoria, style: dFont),
               ),
             ],
           )
