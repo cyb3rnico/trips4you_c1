@@ -104,15 +104,17 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        height: 92.3,
+                        height: 70,
                         child: Row(
                           children: [
                             Image(
                                 image: AssetImage(
                                     'assets/images/multimedia/vivevina.jpg')),
+                            Spacer(),
                             Image(
                                 image: AssetImage(
                                     'assets/images/multimedia/balneario.jpg')),
+                            Spacer(),
                             Image(
                                 image: AssetImage(
                                     'assets/images/multimedia/kramer.png')),

@@ -12,7 +12,6 @@ import 'package:trips4you/screens/ofertas/hotel_3.dart';
 import 'package:trips4you/screens/ofertas/hotel_4.dart';
 import 'package:trips4you/screens/ofertas/hotel_5.dart';
 import 'package:trips4you/screens/tab_principal.dart';
-import 'package:trips4you/screens/tabs/home.dart';
 
 import 'estilos.dart';
 

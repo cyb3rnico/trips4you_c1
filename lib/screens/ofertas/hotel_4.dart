@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:trips4you/estilos.dart';
 
 class Hotel4 extends StatelessWidget {
@@ -14,7 +13,7 @@ class Hotel4 extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image(image: AssetImage('assets/images/hoteles/hotel5.jpg')),
+            Image(image: AssetImage('assets/images/hoteles/hotel4.jpg')),
             Container(
               margin: EdgeInsets.all(10),
               child: Text(
