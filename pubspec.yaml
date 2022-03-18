@@ -29,7 +29,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  material_design_icons_flutter: 4.0.5955
+  material_design_icons_flutter: 5.0.6595
   font_awesome_flutter: ^9.1.0
 
 
